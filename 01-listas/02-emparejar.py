@@ -1,6 +1,13 @@
-lista1 = ["a","b","c","d","e"]
-lista2 = ["alpha", "bravo", "charlie", "delta", "epsilon"]
-lista3 = [0, 1, 2, 3, 4]
+# Nombre: 02-emparejar.py
+# Tema: Recorrer listas al mismo tiempo
+# Objetivo: Usar zip() para unir informacion relacionada.
+# Como ejecutarlo: python 01-listas/02-emparejar.py
 
-for l1, l2, l3 in zip(lista1, lista2, lista3):
-    print(l1, l2, l3)
+# Cada lista tiene informacion de la misma posicion.
+codigos = ["EXP-001", "EXP-002", "EXP-003"]
+estados = ["En revision", "Archivado", "Resuelto"]
+prioridades = [1, 2, 1]
+
+# zip() permite recorrer las tres listas en paralelo.
+for codigo, estado, prioridad in zip(codigos, estados, prioridades):
+    print(codigo, "-", estado, "- prioridad", prioridad)

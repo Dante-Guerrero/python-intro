@@ -1,23 +1,29 @@
-# Ejercicio: Operadores con input y output (con comentarios por operación)
+# Nombre: 04-operadores.py
+# Tema: Operadores aritmeticos y comparaciones
+# Objetivo: Practicar operaciones basicas con dos numeros.
+# Como ejecutarlo: python 00-basicos/04-operadores.py
 
-a = int(input("a: "))
-b = int(input("b: "))
+# Pedimos dos numeros enteros al usuario.
+primer_numero = int(input("Escribe el primer numero: "))
+segundo_numero = int(input("Escribe el segundo numero: "))
 
-print(f"a+b = {a + b}")      # Suma
-print(f"a-b = {a - b}")      # Resta
-print(f"a*b = {a * b}")      # Multiplicación
+# Mostramos operaciones aritmeticas basicas.
+print("Suma:", primer_numero + segundo_numero)
+print("Resta:", primer_numero - segundo_numero)
+print("Multiplicacion:", primer_numero * segundo_numero)
 
-# División y derivados (solo si b no es 0)
-if b != 0:
-    print(f"a/b = {a / b}")          # División (resultado decimal)
-    print(f"a//b = {a // b}")        # División entera (cociente sin decimales)
-    print(f"a%b = {a % b}")          # Módulo (residuo de la división)
-    print(f"a es múltiplo de b = {a % b == 0}")  # Verifica si a es múltiplo de b
+# Solo dividimos si el segundo numero no es cero.
+if segundo_numero != 0:
+    print("Division:", primer_numero / segundo_numero)
+    print("Division entera:", primer_numero // segundo_numero)
+    print("Residuo:", primer_numero % segundo_numero)
+    print("Es multiplo?:", primer_numero % segundo_numero == 0)
 else:
-    print("a/b = No se puede dividir entre 0")   # División (error por 0)
-    print("a//b = No se puede dividir entre 0")  # División entera (error por 0)
-    print("a%b = No se puede dividir entre 0")   # Módulo (error por 0)
-    print("a es múltiplo de b = No aplica (b=0)")# Múltiplo no definido si b=0
+    print("Division: no se puede dividir entre cero")
+    print("Division entera: no se puede dividir entre cero")
+    print("Residuo: no se puede dividir entre cero")
+    print("Es multiplo?: no aplica cuando el segundo numero es cero")
 
-print(f"a**b = {a ** b}")    # Potencia (a elevado a b)
-print(f"a>b = {a > b}")      # Comparación: ¿a es mayor que b?
+# Tambien podemos comparar valores.
+print("Potencia:", primer_numero ** segundo_numero)
+print("El primer numero es mayor?:", primer_numero > segundo_numero)

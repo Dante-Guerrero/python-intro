@@ -1,51 +1,40 @@
-# demo_strings.py
-# Un mini “laboratorio” de strings: métodos útiles y lo que hacen.
-# Porque sí, la gente escribe con espacios, mayúsculas raras y separadores creativos.
+# Nombre: 01-funcionesdetexto.py
+# Tema: Funciones y metodos de texto
+# Objetivo: Practicar operaciones simples para limpiar y revisar textos.
+# Como ejecutarlo: python 02-texto/01-funcionesdetexto.py
 
+# Usamos un texto con espacios al inicio y al final para notar el cambio.
 texto = "   Hola, Mundo Python   "
-
 print("Texto original:", repr(texto))
-# repr() muestra el string “tal cual”, incluyendo espacios y caracteres invisibles.
 
-# 1) .strip()  -> quita espacios (y saltos de línea) al inicio y al final
-sin_bordes = texto.strip()
-print("\n1) .strip()")
-print("Resultado:", repr(sin_bordes))
+# strip() elimina espacios sobrantes al inicio y al final.
+texto_sin_espacios = texto.strip()
+print("Despues de strip():", repr(texto_sin_espacios))
 
-# 2) .lower() / .upper() -> normaliza mayúsculas/minúsculas
-print("\n2) .lower() / .upper()")
-print("lower():", sin_bordes.lower())
-print("upper():", sin_bordes.upper())
+# lower() y upper() ayudan a normalizar mayusculas y minusculas.
+print("En minusculas:", texto_sin_espacios.lower())
+print("En mayusculas:", texto_sin_espacios.upper())
 
-# 3) .split() -> separa un string en partes (lista)
-# - si no le pasas nada, separa por espacios (uno o varios)
-# - si le pasas un separador, usa ese separador
-print("\n3) .split()")
-frase = "python  es   simple"
-print("Frase:", repr(frase))
-print("split() por espacios:", frase.split())
+# split() separa un texto en partes.
+frase = "python es simple"
+palabras = frase.split()
+print("Palabras separadas:", palabras)
 
-csv = "Ana,Bruno,Carla"
-print("CSV:", repr(csv))
-print("split(','):", csv.split(","))
+# Tambien podemos separar usando un caracter especifico.
+linea_csv = "Ana,Bruno,Carla"
+nombres = linea_csv.split(",")
+print("Nombres desde CSV:", nombres)
 
-# 4) .replace() -> reemplaza una parte por otra
-print("\n4) .replace()")
+# replace() cambia una parte del texto por otra.
 mensaje = "Me gusta Java"
-print("Original:", mensaje)
-print("replace('Java','Python'):", mensaje.replace("Java", "Python"))
+print("Texto reemplazado:", mensaje.replace("Java", "Python"))
 
-# 5) .startswith() / .endswith() -> verifica prefijo o sufijo (devuelve True/False)
-print("\n5) .startswith() / .endswith()")
+# startswith() y endswith() verifican inicio y final del texto.
 archivo = "reporte_2026.pdf"
-print("Archivo:", archivo)
-print("startswith('reporte_'):", archivo.startswith("reporte_"))
-print("endswith('.pdf'):", archivo.endswith(".pdf"))
+print("Empieza con 'reporte_'?:", archivo.startswith("reporte_"))
+print("Termina en '.pdf'?:", archivo.endswith(".pdf"))
 
-# Bonus: ejemplo típico de “limpieza” real
-print("\nBONUS: limpieza típica antes de validar")
-correo = "  Dante@Ejemplo.COM  "
+# Este ejemplo muestra una limpieza tipica antes de validar un correo.
+correo = "  estudiante@ejemplo.com  "
 correo_limpio = correo.strip().lower()
-print("Correo original:", repr(correo))
-print("Correo limpio:", repr(correo_limpio))
-print("¿Termina en .com?:", correo_limpio.endswith(".com"))
+print("Correo limpio:", correo_limpio)
