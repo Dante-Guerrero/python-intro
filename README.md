@@ -74,6 +74,20 @@ Si tu sistema usa `pip3`, puedes probar:
 pip3 install pandas
 ```
 
+## Instalacion opcional de librerias avanzadas
+
+La carpeta `07-ejemplos_avanzados/` incluye ejemplos que usan librerias externas. Puedes instalarlas todas juntas con:
+
+```bash
+pip install pyautogui pypdf matplotlib reportlab
+```
+
+Si tu sistema usa `pip3`, prueba:
+
+```bash
+pip3 install pyautogui pypdf matplotlib reportlab
+```
+
 ## Estructura del repositorio
 
 ```text
@@ -88,6 +102,10 @@ python-intro/
 |-- 05-datos/
 |   |-- data/
 |-- 06-ejercicios-derecho/
+|-- 07-ejemplos_avanzados/
+|   |-- data/
+|   |-- pdfs_entrada/
+|   |-- pdfs_salida/
 ```
 
 ## Ruta sugerida de aprendizaje
@@ -101,6 +119,7 @@ Se recomienda avanzar en este orden:
 5. `04-archivos/` para leer y guardar informacion en archivos.
 6. `05-datos/` para una introduccion muy basica a tablas con `pandas`.
 7. `06-ejercicios-derecho/` para practicar con ejemplos sencillos cercanos al ambito juridico y administrativo.
+8. `07-ejemplos_avanzados/` para automatizacion, graficos, PDF y envio de correos.
 
 ## Sugerencia para estudiar
 
