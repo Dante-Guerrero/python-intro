@@ -15,3 +15,4 @@ datos = {
 # pd.DataFrame() convierte el diccionario en una tabla.
 tabla = pd.DataFrame(datos)
 print(tabla)
+#print(tabla.iloc[[0]])

@@ -15,3 +15,4 @@ diferencia = fecha_audiencia - fecha_presentacion
 print("Fecha de presentacion:", fecha_presentacion.date())
 print("Fecha de audiencia:", fecha_audiencia.date())
 print("Dias entre ambas fechas:", diferencia.days)
+

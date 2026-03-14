@@ -9,6 +9,6 @@ from datetime import date
 hoy = date.today()
 
 print("Fecha de hoy:", hoy)
-print("Anio:", hoy.year)
+print("Año:", hoy.year)
 print("Mes:", hoy.month)
 print("Dia:", hoy.day)
