@@ -26,7 +26,7 @@ from pathlib import Path
 # Configuracion del remitente.
 # Cambia estos valores por los de tu cuenta antes de enviar correos reales.
 REMITENTE = "dguerrerob@cientifica.edu.pe"
-CLAVE = "sepgyk-pezDec-xotbo7"
+CLAVE = "aaaaaaaaaaaaaaaaaxxx"
 SERVIDOR_SMTP = "smtp.ejemplo.com"
 PUERTO_SMTP = 587
 
